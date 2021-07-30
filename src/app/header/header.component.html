@@ -1,61 +1,16 @@
-<style>
-  /* Add a black background color to the top navigation */
-  .topnav {
-    background: deepskyblue;
-    overflow: hidden;
 
-
-
-  }
-
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    text-align: center;
-    padding: 20px 20px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    padding-bottom: 5px;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    width: fit-content;
-  }
-
-
-
-  .center {
-    margin: auto;
-    width: 20%;
-  }
-
-  .canvas-center {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-
-
-  }
-</style>
+<div class="row">
 <div class="topnav" >
     <div class="center">
       <!-- a button call the function  "switchColorWhite()" when clicked and change the value of canvasColor to white-->
-      <a class="btn success"  [ngStyle]="{ color : 'white' }"  (click)="switchColorWhite()"  >White</a>
+      <a      [ngStyle]="{ color : 'white' }"  (click)="switchColorWhite()"  role="button" >White</a>
       <!-- a button call the function  "switchColorBlue()" when clicked and change the value of canvasColor to blue -->
-      <a class="btn success" [ngStyle]="{ color : 'white' }" (click)="switchColorBlue()" >Blue</a>
+      <a     [ngStyle]="{ color : 'white' }" (click)="switchColorBlue()" role="button" >Blue</a>
     </div>
 
 </div>
-<div>
-  <!--canvas drawn with size 640 * 360 to contain the photo that user will choose from dropdown menu
-  canvas also can contain a text of user input -->
-  <!--  the background get it value from variable canvasColor from typeScript file  -->
-  <canvas id="myCanvas" class="canvas-center"  width="640" height="360" style="border:4px solid black;" [ngStyle]="{backgroundColor : canvasColor }">
+  <div class="row">
 
-  </canvas>
+  </div>
 </div>
+
