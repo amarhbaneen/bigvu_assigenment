@@ -1,0 +1,36 @@
+/* Add a blue background color to the top navigation */
+.topnav {
+  background: deepskyblue;
+  overflow: hidden;
+
+
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* enable the underline  of links on hover */
+.topnav a:hover {
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  width: fit-content;
+}
+
+
+/* to center the links inside the navigation bar*/
+.center {
+  margin: auto;
+  width: 13%;
+}
+.font {
+  font-family: 'Inter var', sans-serif;
+}
+

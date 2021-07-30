@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'new1';
+  color = 'white';
+
+  onWhiteClick(headColor:string)
+  {
+    this.color=headColor;
+  }
 }
