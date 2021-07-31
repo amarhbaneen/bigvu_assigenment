@@ -1,4 +1,4 @@
-import {Component, OnInit, EventEmitter, Output} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 
 @Component({
@@ -8,22 +8,12 @@ import {Component, OnInit, EventEmitter, Output} from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  canvasColor:string = 'white'; // the background of the canvas , i kept it white by default
-   @Output() onWhiteClick = new EventEmitter<string>();
-
   constructor( ) { }
 
   ngOnInit(): void {
   }
 
-  switchColorBlue() // change the value of the canvasColor to blue
-  {
-    this.onWhiteClick.emit('blue');
-  }
-  switchColorWhite() // change the value of the canvasColor to white
-  {
-    this.onWhiteClick.emit('white');
-  }
+
 
 
 

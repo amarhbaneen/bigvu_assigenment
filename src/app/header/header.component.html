@@ -2,10 +2,10 @@
 <div class="row">
 <div class="topnav" >
     <div class="center">
-      <!-- a button call the function  "switchColorWhite()" when clicked and change the value of canvasColor to white-->
-      <a      [ngStyle]="{ color : 'white' }"  (click)="switchColorWhite()"  role="button" >White</a>
-      <!-- a button call the function  "switchColorBlue()" when clicked and change the value of canvasColor to blue -->
-      <a     [ngStyle]="{ color : 'white' }" (click)="switchColorBlue()" role="button" >Blue</a>
+      <!-- a button redirect the page  to the component of the routelink in our case it redirect to white canvas component -->
+      <a      [ngStyle]="{ color : 'white' }"  routerLink="/white"  role="button" >White</a>
+      <!-- a button redirect the page  to the component of the routelink in our case it redirect to blue canvas component -->
+      <a     [ngStyle]="{ color : 'white' }" routerLink="/blue" role="button" >Blue</a>
     </div>
 
 </div>

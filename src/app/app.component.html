@@ -1,11 +1,16 @@
 
-<div>
-  <app-header (onWhiteClick)="onWhiteClick($event)" ></app-header>
-  <hr >
+<div >
 
-  <app-canvas  [canvasBackground]="color"></app-canvas>
+  <app-header  > <!-- the header component will be shown here --></app-header>
   <hr>
-  <app-footer></app-footer>
+
+    <router-outlet>
+    <!-- the component will be show here by the link is given -->
+    </router-outlet>
+  <app-footer>
+    <!--the footer component will be shown here -->
+    <hr>
+  </app-footer>
 </div>
 
 

@@ -1,0 +1,56 @@
+<div class="container">
+
+  <div class="row1">
+
+    <div class="col-md-3">
+      <div class="row">
+
+        <div class="form-group">
+
+          <select name="option" class="form-control" id="selectAction" [(ngModel)]="userChoose"
+                  (ngModelChange)="ImageOnCanvas(userChoose)"> <!--the ngmodel getting the selected option and store it as string to userchoose variable ngmodelChange run the function to draw the image chosen at the canvas  -->
+            <option *ngFor="let i of presenters"><!--ngfor is angular model to repeat the ooption tag for every element inside the presenters array -->
+              {{i.name}}<!--showing the name value of the presenter array at index i-->
+
+            </option>
+
+          </select>
+          <a class="form-text text-muted"> Background</a>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+    <div class="col-md-3">
+      <form>
+        <div class="form-group">
+          <!--  the maxlength is 22 characters due to blue canvas size doesnt allow to be overwrite
+            by collecting  the blue canvas width dividing on the font size we got 22 characters to type -->
+          <input class="form-control" id="inputText" placeholder="Display text" maxlength="22" (keyup)="onKey($event)">
+          <label></label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" style="margin-top: 10px">
+
+
+  <div class="canvas-center">
+    <!-- i made two canvas for text and photo to make every change at it own canvas so there will not be a canvas updating the other one -->
+    <!-- i give the photo z index 0  because the photo is the base and the text will be above the photo and for that the text canvas index was 1 -->
+    <canvas id="canvas_photo" class="canvas-center" width="640" height="360"
+            style="  position:absolute; z-index: 0; background: blue;  border:4px solid black;"></canvas> <!-- the canvas has id canvas photos so can detect it in the typeScript file -->
+    <canvas id="canvas_text" class="canvas-center" width="640" height="360"
+            style="  position: absolute; z-index: 1;  border:4px solid black;"></canvas><!-- the canvas has id canvas text  so can detect it in the typeScript file -->
+
+
+  </div>
+
+
+</div>

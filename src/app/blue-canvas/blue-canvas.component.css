@@ -1,0 +1,38 @@
+.canvas-center {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 640px;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row1{
+  text-align:center;
+  margin:0 auto;
+}
+.row1 .col-md-3{
+  display:inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.center {
+  margin: auto;
+  width: 18%;
+}
+
+
+
