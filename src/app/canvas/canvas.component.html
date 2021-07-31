@@ -3,17 +3,21 @@
 <div class="row1">
 
 <div class="col-md-3">
-  <div class="row">
-    <div class="form-group" >
+  <div class="row"  >
 
-      <select ngModel name="option" class="form-control" id="selectAction">
-        <option >
+    <div class="form-group">
+
+      <select  name="option" class="form-control" id="selectAction" [(ngModel)]="userChoose" (ngModelChange)="ImageOnCanvas(userChoose)" >
+        <option *ngFor="let i of presenters" >
+          {{i.name}}
 
         </option>
 
-      </select>
+      </select >
       <a class="form-text text-muted"> Background</a>
+
     </div>
+
 
   </div>
 
@@ -23,9 +27,9 @@
     <form>
       <div class="form-group">
 
-        <input  class="form-control" id="displayText" placeholder="Display text">
-        <label></label>
+        <input  class="form-control"  id ="inputText" placeholder="Display text" (input)="writeOnCanvas($event)">
 
+      <label></label>
       </div>
     </form>
   </div>
@@ -39,6 +43,5 @@
   canvas also can contain a text of user input -->
   <!--  the background get it value from variable canvasColor from typeScript file  -->
   <canvas id="myCanvas" class="canvas-center"  width="640" height="360" style="border:4px solid black;" [ngStyle]="{backgroundColor : canvasColor_ }">
-
   </canvas>
 </div>

@@ -1,0 +1,10 @@
+{
+  "/posts": {
+    "target": "https://bigvu-interviews-assets.s3.amazonaws.com/presenters.json",
+    "secure": true,
+    "pathRewrite": {
+      "^/posts": ""
+    },
+    "changeOrigin": true
+  }
+}
