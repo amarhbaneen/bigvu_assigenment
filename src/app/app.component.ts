@@ -6,11 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'new1';
-  color = 'white';
+  title = 'BigVU';
 
-  onWhiteClick(headColor:string)
-  {
-    this.color=headColor;
-  }
 }

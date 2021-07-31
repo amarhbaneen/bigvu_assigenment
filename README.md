@@ -1,27 +1,34 @@
-# New1
+# BigVU
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
+##This project was generated with [Angular CLI] written with TypeScript and HTML and Angular models
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+for BigVU assigment 
+the project is about enabling canvas with drawing photo chosen from dropdown menu labeled with Background
+that contain people name of BigVU presenters
 
-## Code scaffolding
+`the names and photos sources has been getting from JSON file  was giving by the company`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+it can be also to write  text above the photo or without the photo by entering the input text to text field that have name Display text 
 
-## Build
+it can be also choose the color of the background and the corner of the canvas from the header of the web app (it only has two choices Blue and White )
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## How to start the project
+### Requirements to run the project 
+####  Angular CLI `npm install -g @angular/cli`
+#### NODE.js `https://nodejs.org/en/download/`
+### Run `cd app` in the terminal inside the project folder
+###Run `ng serve`  in the terminal inside the project folder 
+### open `http://localhost:4200/`. in the browser (Chrome preferred ) 
+The app will automatically reload if you change any of the source files.
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+
+
