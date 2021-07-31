@@ -20,7 +20,7 @@ it can be also choose the color of the background and the corner of the canvas f
 ####  Angular CLI `npm install -g @angular/cli`
 #### NODE.js `https://nodejs.org/en/download/`
 ### Run `cd app` in the terminal inside the project folder
-###Run `ng serve`  in the terminal inside the project folder 
+Run `ng serve`  in the terminal inside the project folder 
 ### open `http://localhost:4200/`. in the browser (Chrome preferred ) 
 The app will automatically reload if you change any of the source files.
 
