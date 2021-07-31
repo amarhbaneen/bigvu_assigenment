@@ -1,6 +1,6 @@
 # BigVU
 
-##This project was generated with [Angular CLI] written with TypeScript and HTML and Angular models
+This project was generated with [Angular CLI] written with TypeScript and HTML and Angular models
 
 
 for BigVU assigment 
